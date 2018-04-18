@@ -17,16 +17,30 @@ var usuario = {
     //imprimir
 };
 
-console.log(usuario);
-console.log(usuario.nombre);
-delete usuario.edad;
-console.log(usuario);
-usuario.fechaNaciemientoa = new Date();
-console.log(usuario);
-usuario.mascotas = {};
-usuario.mascotas.nombre = 'pepito';
-console.log(usuario);
+//console.log(usuario);
+//console.log(usuario.nombre);
+//delete usuario.edad;
+//console.log(usuario);
+//usuario.fechaNaciemientoa = new Date();
+//console.log(usuario);
+//usuario.mascotas = {};
+//usuario.mascotas.nombre = 'pepito';
+//console.log(usuario);
 
+//arreglo
+var arreglo = [1,'marcelo', false,null,undefined,new Date(),{nombre:'ronnie'},[1,2,3]];
+console.log(arreglo[7][2]);
+
+function sumarDosNumeros(numeroUno,numeroDos) {
+    return numeroUno+numeroDos;
+}
+console.log(sumarDosNumeros(1,2));
+console.log(sumarDosNumeros(1,2.34));
+
+var potenciaDeDosDeUnNumero = function (numero) {
+  return numero*numero;
+};
+console.log(potenciaDeDosDeUnNumero(2));
 
 /*if (-1) {
     console.log('verdadero');
