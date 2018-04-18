@@ -14,7 +14,9 @@ var usuario = {
     apellido: 'Nieto',
     cedula: '871923',
     edad: 22,
-    //imprimir
+    imprimir: function () {
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.edad);
+    }
 };
 
 //console.log(usuario);
@@ -28,20 +30,22 @@ var usuario = {
 //console.log(usuario);
 
 //arreglo
-var arreglo = [1,'marcelo', false,null,undefined,new Date(),{nombre:'ronnie'},[1,2,3]];
-console.log(arreglo[7][2]);
+var arreglo = [1,'marcelo', false,null,undefined,new Date(),{nombre:'ronnie'},[1,2,3],usuario.imprimir,usuario.imprimir()];
+console.log(arreglo);
 
 function sumarDosNumeros(numeroUno,numeroDos) {
     return numeroUno+numeroDos;
 }
-console.log(sumarDosNumeros(1,2));
-console.log(sumarDosNumeros(1,2.34));
+//console.log(sumarDosNumeros(1,2));
+//console.log(sumarDosNumeros(1,2.34));
 
+//funciones anonimas
 var potenciaDeDosDeUnNumero = function (numero) {
   return numero*numero;
 };
-console.log(potenciaDeDosDeUnNumero(2));
+//console.log(potenciaDeDosDeUnNumero(2));
 
+console.log(usuario.imprimir());
 /*if (-1) {
     console.log('verdadero');
 } else {
