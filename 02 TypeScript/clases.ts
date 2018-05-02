@@ -68,7 +68,7 @@ interface UsuarioTres {
     nombre: string;
     casado?: boolean;
     edad: number;
-    imprimir?(saludo:string):string:
+    imprimir?(saludo:string):string
 }
 
 console.log(ronnieDos);
